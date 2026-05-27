@@ -1,4 +1,4 @@
-NAME		= BraiiiiiiinnnzzzZ
+NAME		= MyFirstClass 
 CC			= c++
 CFLAGS		= -Wall -Wextra -Werror -std=c++98 -g
 RM			= rm -f
@@ -8,9 +8,7 @@ OBJ_DIR		= obj
 VPATH		= src
 
 SRCS 		=	main.cpp \
-				newZombie.cpp \
-				randomChump.cpp \
-				Zombie.cpp
+				Fixed.cpp
 				
 OBJS		= $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
 
@@ -20,7 +18,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@$(CC) $(CFLAGS) $(INCLUDES) $(OBJS) -o $(NAME)
-	@echo "BrainZ OK\n"
+	@echo "MyFirstClass OK\n"
 
 $(OBJ_DIR)/%.o: %.cpp
 	@mkdir -p $(OBJ_DIR)
