@@ -1,4 +1,4 @@
-NAME		= MyFirstClass 
+NAME		= FixedPoint 
 CC			= c++
 CFLAGS		= -Wall -Wextra -Werror -std=c++98 -g
 RM			= rm -f
@@ -18,7 +18,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@$(CC) $(CFLAGS) $(INCLUDES) $(OBJS) -o $(NAME)
-	@echo "MyFirstClass OK\n"
+	@echo "FixedPoint OK\n"
 
 $(OBJ_DIR)/%.o: %.cpp
 	@mkdir -p $(OBJ_DIR)
