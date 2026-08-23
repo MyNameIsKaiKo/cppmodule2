@@ -33,13 +33,13 @@ Fixed::~Fixed() {}
 
 int Fixed::getRawBits() const
 {
-	std::cout << "getRawBits function called" << std::endl;
+	std::cout << "getRawBits member function called" << std::endl;
 	return (this->_fixedPoint);
 }
 
 void Fixed::setRawBits(int const raw)
 {
-	std::cout << "setRawBits function called" << std::endl;
+	std::cout << "setRawBits member function called" << std::endl;
 	this->_fixedPoint = raw;
 	return ;
 }

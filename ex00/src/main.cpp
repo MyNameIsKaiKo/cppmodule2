@@ -20,14 +20,14 @@ int	main(void)
 
 	c = b;
 
-	std::cout << a.getRawBits() << std::endl;
-	std::cout << b.getRawBits() << std::endl;
-	std::cout << c.getRawBits() << std::endl;
+	std::cout << "a :" << a.getRawBits() << std::endl;
+	std::cout << "b :" << b.getRawBits() << std::endl;
+	std::cout << "c :" << c.getRawBits() << std::endl;
 	a.setRawBits(7);
 	b.setRawBits(12);
 	c.setRawBits(21);
-	std::cout << a.getRawBits() << std::endl;
-	std::cout << b.getRawBits() << std::endl;
-	std::cout << c.getRawBits() << std::endl;
+	std::cout << "a :" << a.getRawBits() << std::endl;
+	std::cout << "b :" << b.getRawBits() << std::endl;
+	std::cout << "c :" << c.getRawBits() << std::endl;
 	return (0);
 }
